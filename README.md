@@ -1,9 +1,8 @@
 # Projeto Shipay
 ## Algumas ressalvas
-Como alguns exercícios exigiam escrita separada da estrutura da API, as respostas para exercícios específicos estão na pasta `shipay/exs/`
-A code review foi feita no próprio arquivo `bot.py`, em forma de comentários. O código referente a API está no pacote `shipay` no diretório raiz.
+Como alguns exercícios exigiam escrita separada da estrutura da API, as respostas para exercícios específicos estão na pasta `shipay/exs/`. O código referente a API está no pacote `shipay` no diretório raiz.
 
-Versão agora, completamente dockerizada. Foi adicionada uma rota `/api/v1/role` para fazer a adição de uma `role`, já que para testar a rota de adição de usuário, será necessário uma `role` pré-cadastrada, e também uma rota `/api/v1/roles` para listar as roles cadastradas.
+Foi adicionada uma rota `/api/v1/role` para fazer a adição de uma `role`, já que para testar a rota de adição de usuário, será necessário uma `role` pré-cadastrada, e também uma rota `/api/v1/roles` para listar as roles cadastradas.
 
 ## Executando
 
