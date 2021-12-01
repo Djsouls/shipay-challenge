@@ -1,0 +1,3 @@
+class MalformattedRequestError(Exception):
+    pass
+

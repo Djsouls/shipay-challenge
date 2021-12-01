@@ -1,0 +1,8 @@
+Levando em conta o contexto que o erro somente acontece em diferentes máquinas e com o log dado, mais
+especificamente a parte `AttributeError("module 'core.settings' has no attribute ‘WALLET_X_TOKEN_MAX_AGE'")`
+é muito provável que o erro aconteça graças a inconsistência de configuração entre as máquinas. Enquanto
+uma versão do arquivo de configurações possui o atributo "WALLET_X_TOKEN_MAX_AGE", a outra versão não possui.
+Caso essa configuração parte de uma biblioteca de terceiros, é possível que tal biblioteca esteja em versões
+diferentes nas máquinas. A solução para ambos os casos é sincronizar o arquivo de configuração, seja feito
+manualemente, no caso de o código fonte pertencer a aplicação, ou atualizando as versões da biblioteca,
+no caso de o erro provir de uma biblioteca de terceiros.

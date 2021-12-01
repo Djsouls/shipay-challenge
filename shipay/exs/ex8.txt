@@ -1,0 +1,6 @@
+Uma opção interessante para integrar seria a criação de um Middleware para interceptar comunicações vindas de aplicativos de terceiros.
+Utilizando Consumer-Driven Contracts, as aplicações já existentes agem como consumidores, atestando suas expectativas para o possível
+novo provedor de serviço através de contratos. O provedor pode então testar as obrigações pedidas pelo consumidor, e, caso desejar
+atender a esse consumidor, realizar as alterações necessárias. Para o caso de integrar serviços que não necessariamente optem por esse
+design patter, um Middlware teria que ser criado para adaptar as informações recebidas pelos serviços de terceiros para uma interface
+uniforme que nossas aplicações e serviços entendem.

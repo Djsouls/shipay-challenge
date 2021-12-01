@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "shipay"
+version = "0.1.0"
+description = ""
+authors = ["Djalma <djalmirinha@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Flask = "^2.0.2"
+SQLAlchemy = "^1.4.27"
+psycopg2 = "^2.9.1"
+Flask-SQLAlchemy = "^2.5.1"
+dynaconf = "^3.1.7"
+pytest-flask = "^1.2.0"
+click = "^8.0.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
