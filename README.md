@@ -1,8 +1,11 @@
-# Projeto Shipay
-## Algumas ressalvas
-Como alguns exercícios exigiam escrita separada da estrutura da API, as respostas para exercícios específicos estão na pasta `shipay/exs/`. O código referente a API está no pacote `shipay` no diretório raiz.
+# Projeto Shipay - Desafio
+## Escopo do problema
+Foi requisitada a criação de uma API RESTful com no mínimo duas rotas: uma para realizar a procura de uma `role_id` dado um `user_id` e outra para cadastrar um usuário, fornecendo os campos do usuário através do payload da requisição, caso o usuário não fornecesse senha, uma deveria ser criada para ele.
 
+## Algumas ressalvas
 Foi adicionada uma rota `/api/v1/role` para fazer a adição de uma `role`, já que para testar a rota de adição de usuário, será necessário uma `role` pré-cadastrada, e também uma rota `/api/v1/roles` para listar as roles cadastradas.
+
+PS: Caso esteja com o serviço do postgresql rodando na sua máquina, é possível que haja conflito de portas, execute `systemctl stop postgresql` para parar temporariamente o serviço. Para reativá-lo, execute `systemctl start postgresql`.
 
 ## Executando
 
@@ -11,9 +14,6 @@ Para executar todos os testes, a partir do diretório raiz, execute: `docker bui
 
 ### Localmente
 Entre no diretório raiz do projeto shipay e execute `docker-compose up` e a aplicação estará escutando na porta 5000.
-
-### Em deploy
-Para dar deploy seria necessário ainda configurar o projeto com um WSGI de produção, como o gunicorn ou uwsgi, além de atualizar as variáveis de ambiente para retirar o status de development da aplicação e, caso a API seja fechada, gerar uma chave secreta de acesso.
 
 ## Info
 **Schemes**: http://

@@ -11,5 +11,5 @@ class RoleController:
             raise MalformattedRequestError
         self.repository.add_role(description)
 
-    def get_roles(self):
+    def get(self):
         return self.repository.get_all_roles()

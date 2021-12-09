@@ -89,3 +89,7 @@ def create_role():
         ), 400
 
     return jsonify(success=True)
+
+@bp.route('/roles', methods=['GET'])
+def show_roles():
+    return jsonify(role_controller.get())
